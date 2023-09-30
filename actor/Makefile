@@ -22,7 +22,7 @@ deploy-update:
 	golem-cli template update --template-name $(PROJECT_NAME) ./build/$(PROJECT_NAME).wasm
 
 spawn-worker:
-	golem-cli worker add --worker-name $(WORKER_NAME) --template-name $(PROJECT_NAME)
+	golem-cli worker add --worker-name $(WORKER_NAME) --template-name $(PROJECT_NAME) --env URL='https://example.com'
 
 delete-worker:
 	golem-cli worker delete --worker-name $(WORKER_NAME) --template-name $(PROJECT_NAME)

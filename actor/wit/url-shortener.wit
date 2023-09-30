@@ -3,11 +3,11 @@ package golem:template
 // See https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md for more details about the WIT syntax
 
 interface api {
-  set: func(value: string)
   get: func() -> string
   stats: func() -> u64
 }
 
 world url-shortener {
+  import wasi:cli/environment
   export api
 }

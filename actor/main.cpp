@@ -8,22 +8,11 @@ int32_t main(void) {
     return 0;
 }
 
-static std::string url = "";
 static unsigned long accessCount = 0;
 
-bool isInitialized() {
-    return url.length() != 0;
-}
-
-void exports_golem_template_api_set(url_shortener_string_t *value) {
-    const auto requestNotEmpty = value->len != 0;
-    if (!isInitialized() && requestNotEmpty) {
-        url = std::move(std::string(value->ptr, value->len));
-    }
-}
-
 void exports_golem_template_api_get(url_shortener_string_t *ret) {
-    if (isInitialized()) {
+    const auto url = std::string(std::getenv("URL"));
+    if (url.length() != 0) {
         char* buf = new char[url.length()];
         std::copy(url.begin(), url.end(), buf);
         
