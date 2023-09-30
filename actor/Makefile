@@ -1,6 +1,6 @@
 PROJECT_NAME = url_shortener
-WASI_SYSROOT = ../wasi-sdk-20.0/share/wasi-sysroot
-WASI_CXX = ../wasi-sdk-20.0/bin/clang++
+WASI_SYSROOT = ../../wasi-sdk-20.0/share/wasi-sysroot
+WASI_CXX = ../../wasi-sdk-20.0/bin/clang++
 CXX = clang++
 SRCS = main.cpp
 OBJS = $(subst ..cc,.o,$(SRCS))
