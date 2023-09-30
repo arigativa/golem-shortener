@@ -1,0 +1,6 @@
+github.com/klpx/go-wasi-http v0.0.0-20230930150704-c92ef6044976 h1:Ol080ValF07z7k/f9yNv2KeBa1hohnK3PCvpLTd4iic=
+github.com/klpx/go-wasi-http v0.0.0-20230930150704-c92ef6044976/go.mod h1:SaMxBsbyh8FHAZUdWUTpnD8lgrXkU5v6jLaf65tN3wQ=
+github.com/zivergetech/go-wasi-http v0.1.0 h1:VmjxEGeaYNVlR+PKON0Jo+fdqpNXTTYRRp1jsKiulxI=
+github.com/zivergetech/go-wasi-http v0.1.0/go.mod h1:SaMxBsbyh8FHAZUdWUTpnD8lgrXkU5v6jLaf65tN3wQ=
+github.com/zivergetech/go-wasi-http v0.1.1-0.20230901155658-56dd26b72d69 h1:bFvT7TpqxPzETeJBAJuSq6UHC3+cD2Jma3TsfOvD5BU=
+github.com/zivergetech/go-wasi-http v0.1.1-0.20230901155658-56dd26b72d69/go.mod h1:SaMxBsbyh8FHAZUdWUTpnD8lgrXkU5v6jLaf65tN3wQ=

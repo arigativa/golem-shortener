@@ -1,0 +1,19 @@
+package golem-shortener: manager
+
+interface api {
+  record worker {
+    id: string,
+    name: string,
+    version: string,
+  }
+
+  hello: func() -> string
+  spawn: func(url: string) -> result<string, string>
+  get-workers: func() -> list<worker>
+}
+
+world shortener-manager {
+  import wasi:http/outgoing-handler
+  import wasi:cli/environment
+  export api
+}
