@@ -7,9 +7,9 @@ But in order to make it work, you need to have a database, a web server, and a l
 In Golem Cloud, it is possible to threat a single URL as a single actor that
 can manage its own state and serve requests.
 
-![dataflow.png](dataflow.png)
+### Data flow
 
-## Usage
+![dataflow.png](dataflow.png)
 
 1. User POSTs an URL to be shortened:
    ```bash
@@ -26,7 +26,17 @@ can manage its own state and serve requests.
 5. Another route can be used with the actor to get the lookup counter.
 
 
-This approach could be applied to ith
+### Comment
+
+This approach could be applied to more interesting complex thing in the same manner.
+
+For example, a single actor could be used to manage a single user's profile,
+which could also be a gateway to rest of the system.
+
+Or a single actor could represent a temporary signalling session for WebRTC.
+So there will be no need to have a signalling server that should manage all the states of all the sessions.
+After the session is over, the actor can be disposed.
+
 
 # Deployment
 
