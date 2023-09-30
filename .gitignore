@@ -1,4 +1,4 @@
-build/
+actor/build/
 actor/url_shortener.c
 actor/url_shortener.h
 actor/url_shortener_component_type.o
