@@ -16,14 +16,18 @@ can manage its own state: return the URL to users, count lookups or even more de
     curl -k -d '{"url":"https://google.com/?q=this%20is%20groundbreaking"}' https://www.shurl.hsslb.ch/create
     #> [{"ok":"https://www.shurl.hsslb.ch/go/go/CN3Ui"}]
    ```
-   The request goes to a manager worker (it is unique).
+   The request goes to a manager worker (it is unique). (
 2. The manager worker spawns an actor worker with the URL as an environment variable.
 3. The name of the actor is used as part of short URL that is given back to user.
 4. When user GETs the short URL, Golem Cloud routes the request to the specific actor worker
    that holds the long URL and also manages the state (lookup counter).
    
    So the actor increments lookup counter, and responds with the long URL.
-5. Another route can be used with the actor to get the lookup counter.
+
+   Check out the short url yourself: [https://www.shurl.hsslb.ch/go/go/CN3Ui](https://www.shurl.hsslb.ch/go/go/CN3Ui)
+6. Another route can be used with the actor to get the lookup counter.
+
+   Check it out as wel: [https://www.shurl.hsslb.ch/stats/CN3Ui](https://www.shurl.hsslb.ch/stats/CN3Ui)
 
 
 ### Comment
