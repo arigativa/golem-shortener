@@ -5,7 +5,7 @@ URL shortener is a simple product.
 But in order to make it work, you need to have a database, a web server, and a lot of other things.
 
 In Golem Cloud, it is possible to treat a single URL as a single actor that
-can manage its own state and serve requests.
+can manage its own state: return the URL to users, count lookups or even more detailed statistics.
 
 ### Data flow
 
